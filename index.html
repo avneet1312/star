@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Force Engineering Co.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') fixed;
+            background-size: cover;
+            background-position: center;
+            animation: backgroundAnimation 20s infinite alternate linear;
+        }
+
+        @keyframes backgroundAnimation {
+            from {
+                filter: hue-rotate(0deg);
+            }
+            to {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        header {
+            background-color: #76fce4;
+            color: #00203f; /* Updated color for the company name */
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font for the company name */
+            animation: textAnimation 1.5s ease-in-out;
+        }
+
+        @keyframes textAnimation {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        #logo {
+            max-width: 150px;
+            height: auto;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        section {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .contact-info p {
+            margin: 0;
+        }
+
+        .icon {
+            font-size: 24px;
+            margin-right: 8px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <img src="star-force-logo.png" alt="Company Logo" id="logo">
+            <h1>STAR FORCE ENGINEERING CO.</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone-alt icon"></i>Phone: 98140-27587, 97797-11314</p>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
